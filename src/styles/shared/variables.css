@@ -1,0 +1,146 @@
+:root {
+  --color-azul: #0c4775;
+  --color-rosado: #eb7184;
+  --color-verde: #1D8F8E;
+  --color-morado: #613e75;
+  --color-naranjo: #f4ac9f;
+  --color-celeste: #73c6d0;
+  --margin: 2em;
+  --padding: 2em;
+  --border-radius: 2em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contenedor_global {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contenedor_pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  position: relative;
+}
+
+.img_fondo_pagina {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.texto, .text {
+  font-size: 1.5em;
+  color: var(--color-azul);
+  line-height: 1.6;
+}
+
+.texto b, .text b {
+  font-weight: 700;
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 1em 0;
+  color: var(--color-azul);
+  text-align: center;
+}
+
+.contenedor_seccion {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+  padding: 0 2em;
+}
+
+.contenedor_informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  padding: 2em;
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contenedor_informacion img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+
+.contenedor_imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.contenedor_imagen_separacion {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+
+.contenedor_imagen_separacion .imagen {
+  width: 2em;
+  height: 2em;
+  object-fit: contain;
+}
+
+label {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .texto, .text {
+    font-size: 1.2em;
+  }
+  
+  .titulo {
+    font-size: 1.5em;
+  }
+  
+  .contenedor_seccion {
+    flex-direction: column;
+    align-items: center;
+  }
+}
