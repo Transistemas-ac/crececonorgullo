@@ -106,7 +106,7 @@ export default function Home() {
               El programa está dirigido a{" "}
               <strong>niñas, niños y adolescentes</strong> (NNA){" "}
               <strong>trans</strong> y <strong>no binarios </strong>
-              entre <strong>0 y 17 años</strong>, que requieran acompañamiento
+              entre <strong>3 y 17 años</strong>, que requieran acompañamiento
               profesional para el reconocimiento y vivencia de su identidad de
               género.
             </p>
