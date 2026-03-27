@@ -160,35 +160,35 @@ export default function Home() {
         >
           <div className="contenedor_imagen_separacion" aria-hidden="true">
             <Image
-              src="/img/elementos_elementos-38.png"
+              src="/img/7.png"
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/elementos_elementos-38.png"
+              src="/img/7.png"
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/elementos_elementos-38.png"
+              src="/img/7.png"
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/elementos_elementos-38.png"
+              src="/img/7.png"
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/elementos_elementos-38.png"
+              src="/img/7.png"
               className="imagen"
               alt=""
               width={50}
