@@ -5,22 +5,36 @@ import Link from "next/link";
 import "@/styles/shared/variables.css";
 import "@/styles/home.css";
 
+import Img10 from "@/assets/10.png";
+import Img1 from "@/assets/1.png";
+import Img2 from "@/assets/2.png";
+import Img12 from "@/assets/12.png";
+import Img14 from "@/assets/14.png";
+import Img13 from "@/assets/13.png";
+import Img7 from "@/assets/7.png";
+
 export default function Home() {
   return (
     <div className="contenedor_global">
       <div className="contenedor_pagina">
         <div className="img_fondo_pagina" aria-hidden="true">
-          <Image src="/img/10.png" alt="" fill style={{ objectFit: "cover" }} />
+          <Image src={Img10} alt="" fill style={{ objectFit: "cover" }} />
         </div>
 
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-content">
-            <h1 id="hero-title" className="texto">
-              Sitio informativo sobre el Programa de Acompañamiento a la
-              Identidad de Género - Crece con Orgullo, una política pública del
-              Gobierno de Chile. Esta web es una reconstrucción independiente
+            <p id="hero-title" className="texto">
+              Este sitio presenta información sobre el programa{" "}
+              <strong>Crece con Orgullo</strong>, una política pública del
+              Gobierno de Chile.
+            </p>
+            <p className="texto">
+              Esta es una reconstrucción independiente hecha por{" "}
+              <strong>
+                <a href="https://transistemas.org">Transistemas</a>
+              </strong>{" "}
               con fines informativos y no corresponde a un sitio oficial.
-            </h1>
+            </p>
             <nav className="hero-buttons" aria-label="Navegación rápida">
               <a href="#que-es">¿Qué es el programa?</a>
               <a href="#para-quien">¿Para quién es?</a>
@@ -41,17 +55,16 @@ export default function Home() {
               ¿Qué es el programa Crece Con Orgullo?
             </h2>
             <Image
-              src="/img/1.png"
+              src={Img1}
               alt="Logo del programa"
               className="section-image"
               width={100}
               height={100}
-              style={{ width: "auto", height: "auto" }}
             />
           </header>
           <div className="section-content">
             <p className="texto">
-              <strong>El Programa Crece Con Orgullo</strong> nace a partir de la{" "}
+              El Programa <strong>Crece Con Orgullo</strong> nace a partir de la{" "}
               <strong>Ley N° 21.120</strong> que{" "}
               <strong>
                 reconoce y da protección al Derecho a la Identidad de Género
@@ -81,7 +94,7 @@ export default function Home() {
               ¿Para quién es el programa?
             </h2>
             <Image
-              src="/img/2.png"
+              src={Img2}
               alt="Icono de personas"
               className="section-image"
               width={100}
@@ -115,7 +128,7 @@ export default function Home() {
           </h2>
           <div className="contenedor_seccion">
             <article className="card">
-              <Image src="/img/12.png" alt="" width={100} height={100} />
+              <Image src={Img12} alt="" width={100} height={100} />
               <div className="card-content">
                 <h3>
                   <strong>Acompañamiento psicológico:</strong>
@@ -127,7 +140,7 @@ export default function Home() {
               </div>
             </article>
             <article className="card">
-              <Image src="/img/14.png" alt="" width={100} height={100} />
+              <Image src={Img14} alt="" width={100} height={100} />
               <div className="card-content">
                 <h3>
                   <strong>Acompañamiento social:</strong>
@@ -139,7 +152,7 @@ export default function Home() {
               </div>
             </article>
             <article className="card">
-              <Image src="/img/13.png" alt="" width={100} height={100} />
+              <Image src={Img13} alt="" width={100} height={100} />
               <div className="card-content">
                 <h3>
                   <strong>Acompañamiento jurídico:</strong>
@@ -160,35 +173,35 @@ export default function Home() {
         >
           <div className="contenedor_imagen_separacion" aria-hidden="true">
             <Image
-              src="/img/7.png"
+              src={Img7}
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/7.png"
+              src={Img7}
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/7.png"
+              src={Img7}
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/7.png"
+              src={Img7}
               className="imagen"
               alt=""
               width={50}
               height={50}
             />
             <Image
-              src="/img/7.png"
+              src={Img7}
               className="imagen"
               alt=""
               width={50}

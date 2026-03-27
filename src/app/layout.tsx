@@ -6,6 +6,29 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Crece Con Orgullo",
   description: "Programa de Acompañamiento a la Identidad de Género",
+  metadataBase: new URL("https://transistemas.org"),
+  openGraph: {
+    title: "Crece Con Orgullo",
+    description: "Programa de Acompañamiento a la Identidad de Género",
+    url: "https://transistemas.org",
+    siteName: "Crece Con Orgullo",
+    locale: "es_CL",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 512,
+        height: 512,
+        alt: "Crece Con Orgullo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crece Con Orgullo",
+    description: "Programa de Acompañamiento a la Identidad de Género",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

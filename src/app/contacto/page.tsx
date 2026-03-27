@@ -6,6 +6,9 @@ import "@/styles/shared/variables.css";
 import "@/styles/home.css";
 import "@/styles/contacto.css";
 
+import Img10 from "@/assets/10.png";
+import Img9 from "@/assets/9.png";
+
 export default function Contacto() {
   const [status, setStatus] = useState<
     "idle" | "loading" | "success" | "error"
@@ -48,7 +51,7 @@ export default function Contacto() {
     <div className="contenedor_global">
       <div className="contenedor_pagina">
         <div className="img_fondo_pagina" aria-hidden="true">
-          <Image src="/img/10.png" alt="" fill style={{ objectFit: "cover" }} />
+          <Image src={Img10} alt="" fill style={{ objectFit: "cover" }} />
         </div>
 
         <section className="hero-section" aria-labelledby="contacto-title">
@@ -70,7 +73,7 @@ export default function Contacto() {
             </p>
           </div>
           <Image
-            src="/img/9.png"
+            src={Img9}
             alt=""
             className="hero-image"
             width={200}

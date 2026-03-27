@@ -4,12 +4,15 @@ import Image from "next/image";
 import "@/styles/shared/variables.css";
 import "@/styles/tus-derechos.css";
 
+import Img10 from "@/assets/10.png";
+import Img4 from "@/assets/4.png";
+
 export default function TusDerechos() {
   return (
     <div className="contenedor_global">
       <div className="contenedor_pagina">
         <div className="img_fondo_pagina" aria-hidden="true">
-          <Image src="/img/10.png" alt="" fill style={{ objectFit: "cover" }} />
+          <Image src={Img10} alt="" fill style={{ objectFit: "cover" }} />
         </div>
 
         <section className="hero-section" aria-labelledby="derechos-title">
@@ -31,7 +34,7 @@ export default function TusDerechos() {
             </p>
           </div>
           <Image
-            src="/img/4.png"
+            src={Img4}
             alt=""
             className="hero-image"
             width={200}

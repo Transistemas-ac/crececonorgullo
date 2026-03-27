@@ -7,13 +7,14 @@
   gap: 2em;
   flex-wrap: wrap;
   margin-top: 100px;
+  text-align: center;
 }
 
 .hero-content {
   background: rgba(255, 255, 255, 0.95);
   padding: 3em;
   border-radius: 1em;
-  max-width: 1400px;
+  max-width: 1200px;
   flex: 1;
 }
 

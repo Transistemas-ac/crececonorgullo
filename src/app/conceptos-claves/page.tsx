@@ -5,6 +5,9 @@ import "@/styles/shared/variables.css";
 import "@/styles/home.css";
 import "@/styles/conceptos.css";
 
+import Img10 from "@/assets/10.png";
+import Img3 from "@/assets/3.png";
+
 export default function ConceptosClaves() {
   const conceptos = [
     {
@@ -43,7 +46,7 @@ export default function ConceptosClaves() {
     <div className="contenedor_global">
       <div className="contenedor_pagina">
         <div className="img_fondo_pagina" aria-hidden="true">
-          <Image src="/img/10.png" alt="" fill style={{ objectFit: "cover" }} />
+          <Image src={Img10} alt="" fill style={{ objectFit: "cover" }} />
         </div>
 
         <section className="hero-section" aria-labelledby="conceptos-title">
@@ -66,7 +69,7 @@ export default function ConceptosClaves() {
             {conceptos.map((concepto, index) => (
               <article key={index} className="concepto-card">
                 <Image
-                  src="/img/3.png"
+                  src={Img3}
                   alt=""
                   className="concepto-icon"
                   width={50}

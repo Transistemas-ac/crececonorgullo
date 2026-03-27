@@ -5,6 +5,8 @@ import "@/styles/shared/variables.css";
 import "@/styles/home.css";
 import "@/styles/hospitales.css";
 
+import Img10 from "@/assets/10.png";
+
 export default function Hospitales() {
   const hospitales = [
     {
@@ -103,7 +105,7 @@ export default function Hospitales() {
     <div className="contenedor_global">
       <div className="contenedor_pagina">
         <div className="img_fondo_pagina" aria-hidden="true">
-          <Image src="/img/10.png" alt="" fill style={{ objectFit: "cover" }} />
+          <Image src={Img10} alt="" fill style={{ objectFit: "cover" }} />
         </div>
 
         <section className="hero-section" aria-labelledby="hospitales-title">
